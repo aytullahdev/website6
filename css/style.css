@@ -1,0 +1,249 @@
+@import url(../webbox/css/main.css);
+@import url('https://fonts.googleapis.com/css2?family=Scheherazade+New&display=swap');
+*{
+    margin: 0px;
+    padding: 0;
+    font-family: 'Scheherazade New', serif;
+   
+}
+:root{
+    --var:2%;
+}
+body{
+    background-color: rgb(0, 0, 0);
+    position: relative;
+}
+nav{
+    width: 100%;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    z-index: 1;
+
+
+}
+.menu{
+   
+    display: flex;
+    width: 40%;
+    justify-content: space-around;
+    list-style-type: none;
+
+}
+.menu,.smenu{
+     padding-top: 10px;
+     cursor: pointer;
+}
+.smenu{
+
+    list-style-type: none;
+    display: flex;
+    width: 20%;
+    justify-content: space-around;
+}
+.smenu>li>i{
+    font-size: 20px;
+    padding: 5px 5px;
+    cursor: pointer;
+    border: 1px solid white;
+
+}
+.smenu>li>i:hover{
+    color: rgb(127, 136, 131);
+}
+.smenu>li>span{
+    background-color: rgb(10, 199, 126);
+    padding: 2px 10px;
+    display: block;
+    clip-path: polygon(100% 2%, 100% 79%, 78% 100%, 0 100%, 0 3%);
+}
+.smenu>li>span:hover{
+    color: rgb(81, 85, 83);
+}
+.sec01{
+    height: 80vh;
+   position: relative;
+  
+   background-image: url(../img/pawel-nolbert-4u2U8EO9OzY-unsplash.jpg);
+   background-position: center;
+   object-fit: cover;
+   clip-path: polygon(0 0, 100% 0, 100% 73%, 90% 100%, 9% 92%, 0 71%);
+}
+.center01{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 250px;
+    width: 40%;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+
+}
+.center01>div>h1{
+    font-size: 70px;
+    color: rgb(255, 255, 255);
+}
+.center01>div>a{
+    text-decoration: none;
+    color:white;
+    background-color: rgb(31, 57, 119);
+    margin: 20px;
+    padding: 5px 20px;
+    font-size: 15px;
+    display: inline-block;
+    clip-path: polygon(13% 0, 100% 0, 100% 88%, 79% 100%, 0 100%, 0 24%);
+    
+
+    
+}
+a{
+    text-decoration: none;
+    color: snow;
+}
+.center01>div>a:hover{
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.sec021{
+    text-align: center;
+    padding: 5px;
+    width: 50%;
+    margin: auto;
+    color: whitesmoke;
+}
+.sec03{
+    width: 70%;
+   padding: 10px 20px;
+    
+    margin: auto;
+    color: rgb(65, 80, 95);
+    text-align: center;
+    font-size: 30px;
+
+}
+.sec04{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+    padding-top: 20px;
+}
+.col-5{
+    width: 45%;
+   color: snow;
+}
+.ul1>li{
+    margin-top: 20px;
+    padding-left: 40px;
+
+}
+.btn{
+    background-color: snow;
+    margin-left: 40px!important;
+    margin-top: 10px;
+}
+/* timeline css */
+.timeline-section{
+    background-color: #21252959;
+    color: var(--bs-danger);
+    min-height: 50vh;
+    padding: 100px 15px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 25px;
+}
+.timeline-items{
+    
+    width: 100%;
+    transition: 1s;
+    
+    
+}
+.timeline-date{
+    text-align: center;
+}
+.timeline-item:nth-child(odd){
+    padding-left: 50%;
+   
+}
+.timeline-item:nth-child(even){
+   padding-right: 50%;
+}
+.timeline-item{
+    width: 100%;
+}
+.timeline-item{
+   padding:15px;
+   font-size: 20px;
+   text-align: left;
+}
+.timeline-dot{
+    height: 20px;
+    width: 20px;
+    background-color: dodgerblue;
+    position: absolute;
+    cursor: pointer;
+    left: 48%;
+    border-radius: 50%;
+}
+.timeline-dot:hover{
+    background-color: white;
+}
+.timeline-items::before{
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: var(--var);
+    left: 49%;
+    transition: 1s;
+    background-color: firebrick;
+    
+}
+.timeline-content{
+    display: none;
+}
+@media only screen and (max-width:430px) {
+
+    .menu{
+        display: none;
+    }
+    .smenu{
+        width: 100%;
+    }
+    .sec01{
+        height: 50vh;
+    }
+    .center01{
+        top: 60%;
+    }
+    .center01>div>h1{
+        font-size: 30px;
+    }
+    .col-5{
+        width: 100%;
+    }
+    .ul1{
+        display: none;
+    }
+   
+}
+@media only screen and (min-width:768px){
+    .smenu{
+        width: 40%;
+    }
+
+}

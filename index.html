@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site</title>
+</head>
+<body>
+    <nav>
+        <ul class="menu">
+            <li><a href="#about">About</a></li>
+            <li><a href="#jin">Jump In</a></li>
+            <li>Cyberconomy</li>
+            <li>FAQs</li>
+        </ul>
+        <ul class="smenu">
+            <li> <i class="fab fa-facebook"></i> </li>
+            <li> <i class="fab fa-twitch"></i></li>
+            <li><span>CONNECT WALLET</span></li>
+        </ul>
+    </nav>
+    <header class="sec01">
+        
+        <div class="center01">
+          <div>
+            <h1>AWAKEND</h1>
+          </div>
+            <div>
+                <a href="#">WHAT</a><a href="#">HOW</a>
+            </div>
+        </div>
+
+    </header>
+    <section class="sec02" id="about"style="background-color: rgb(0, 0, 0);">
+        <div class="sec021">
+            <h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit. <span style="color: orangered;">What is go</span> </h1>
+        </div>
+        <div class="sec03">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est odio veniam ab unde pariatur consequuntur, qui placeat minima quod asperiores suscipit libero exercitationem hic harum molestias perspiciatis dolor quae nostrum quis blanditiis in numquam.
+        </div>
+        <p style="color:orangered; text-align: center; font-size: 18px ; padding-top: 20px; text-transform: uppercase;">This is just the begining</p>
+    </section>
+    <section class="sec04" id="jin">
+        <div class="col-5">
+            <img src="img/conor-luddy-IGa3Md8wP6g-unsplash.jpg" alt="" style="object-fit: cover; width: 100%;background-position: center;">
+        </div>
+        <div class="col-5">
+            <h3 style="color: rgb(221, 75, 22); text-align: left; font-size: 40px;">Get Started</h3>
+            <p style="font-size: 20px;padding: 10px; color: rgb(124, 137, 151);"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab tempora reiciendis, quaerat eligendi sed voluptate ullam ipsa sit, fugit quisquam, repellendus hic doloremque. </p>
+            <ul style="list-style: none;padding: 0;margin: 0; font-size: 23px;" class="ul1">
+                <li>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id, repellat? Earum repellendus praesentium ut eos ex explicabo nihil et voluptatum amet, accusantium sapiente.
+                </li>
+                <li>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id, repellat? Earum repellendus praesentium ut eos ex explicabo nihil et voluptatum amet, accusantium sapiente.
+                </li>
+                <li>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id, repellat? Earum repellendus praesentium ut eos ex explicabo nihil et voluptatum amet, accusantium sapiente.
+                </li>
+            </ul>
+            <button class="btn">GET START</button>
+        </div>
+
+    </section>
+   <section class="sec06" style="width: 80%; margin: auto;">
+        <h1 style="text-align: center; color: white; padding: 50px 5px; text-transform: uppercase;">Time Line</h1>
+        <div class="timeline-section">
+            <div class="timeline-items">
+                <div class="timeline-item">
+                    <div class="timeline-dot" id="dot0"></div>
+                    <div class="timeline-date">
+                        12 Sep 2011
+                    </div>
+                    <div class="timeline-content" id="item1">
+                        <h1>Lorem, ipsum dolor.</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consequuntur cupiditate perferendis voluptas! Iure assumenda animi repellat provident?</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot" id="dot1"></div>
+                    <div class="timeline-date">
+                        12 Sep 2011
+                    </div>
+                    <div class="timeline-content" id="item2">
+                        <h1>Lorem, ipsum dolor.</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consequuntur cupiditate perferendis voluptas! Iure assumenda animi repellat provident?</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot" id="dot2"></div>
+                    <div class="timeline-date">
+                        12 Sep 2011
+                    </div>
+                    <div class="timeline-content" id="item3">
+                        <h1>Lorem, ipsum dolor.</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consequuntur cupiditate perferendis voluptas! Iure assumenda animi repellat provident?</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot" id="dot3"></div>
+                    <div class="timeline-date">
+                        12 Sep 2011
+                    </div>
+                    <div class="timeline-content" id="item4">
+                        <h1>Lorem, ipsum dolor.</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consequuntur cupiditate perferendis voluptas! Iure assumenda animi repellat provident?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    
+   </section>
+
+
+    <script src="./webbox/js/bootstrap.bundle.min.js"></script>
+    <script src="./webbox/js/jquery.min.js"></script>
+    <script>
+        $('#dot0').click(function(){
+            $('.timeline-items').css('--var','10%');
+            $('#item1').toggle(1000);
+        });
+        $('#dot1').click(function(){
+            $('.timeline-items').css('--var','25%');
+            $('#item2').toggle(1000);
+        });
+        $('#dot2').click(function(){
+            $('.timeline-items').css('--var','50%');
+            $('#item3').toggle(1000);
+        });
+        $('#dot3').click(function(){
+            $('.timeline-items').css('--var','75%');
+            $('#item4').toggle(1000);
+        });
+      
+    </script>
+</body>
+</html>
